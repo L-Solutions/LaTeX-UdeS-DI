@@ -1,0 +1,32 @@
+\chapter{Premi\`ere annexe}
+\label{annexe:A}
+
+Les annexes peuvent \^etre \'ecrites en fran\c{c}ais ou en anglais.
+
+Voici un exemple de citation: on utilise la commande \verb@cite@ pour citer des articles comme ceci~(\cite{Abr.96-BBook})
+ou ceci~(\cite{Hoa.85-CSP}). 
+
+On peut aussi en citer plusieurs \`a la fois (liste de citations~
+\cite{Jac.83-JSD,Mil.89-CCS,INRIA.cadp})
+
+Ceci appara\^itra dans la bibliographie du document.
+
+Les entr\'ees de cette bibliographie doivent \^etre mises dans un document \texttt{.bib}. Ce gabarit de m\'emoire et de th\`ese en contient un portant le nom de \texttt{bibliographie.bib}. C'est LaTeX qui s'occupe de classer et d'int\'egrer les bons liens dans votre document, ainsi que de g\'en\'erer la bibliographie correctement.
+
+Il y a plusieurs types de documents pouvant \^etre utilis\'es:
+\begin{description}
+\item[book] un livre (\cite{Abr.96-BBook,Hoa.85-CSP,Jac.83-JSD,Mil.89-CCS})
+\item[manual] un manuel de cours, sensiblement \'equivalent \`a un livre
+\item[inbook] un chapitre d'un livre (\cite{Ch.96-Programmer-avec-Scheme})
+\item[article] un article de recherche classique publi\'e dans un journal (et non une conf\'erence) (\cite{Bo.84-VVS,FFL.05-SOSYM,FSd.03-eb3})
+\item[proceedings] les actes d'un conf\'erence (\cite{LeWe.09-IFM,ArGnMa.03-FME}) 
+\item[inproceedings] une parution dans un acte de conf\'erence (\cite{Matra.99-Meteor,FF.07-ICFEM,Pn.79-The-Temporal-Semantics-of-Concurrent-Programs}) \'eventuellement avec une r\'ef\'erence crois\'ee  (crossref) (\cite{LeBu.03-ProB})
+\item[conference] identique au pr\'ec\'edent
+\item[phdthesis] une th\`ese de doctorat (\cite{FRA.06-thesis})
+\item[masterthesis] un m\'emoire de ma\^itrise (\cite{Ri.01-EB3})
+\item[techreport] un rapport technique paru dans une institution (universitaire ou autre) et disponible publiquement (\cite{FRA.05-TR9})
+\item[incollection] un article d'une collection d'articles parus ailleurs (\cite{BB.89-LOTOS}) 
+\item[booklet] un livret ou un document comme une th\`ese d'habilitation \`a diriger la recherche ou un manuel utilisateur (\cite{La.02-CDBD,STE.97-Manuel-B})
+\item[unpublished] un document non publi\'es, par exemple pour cause de confidentialit\'e (\cite{BuDo.99-guide-B})
+\item[misc] n'importe quel autre document, utile pour un site Internet ou un document publi\'e sur un site personnel (\cite{INRIA.cadp,Gi.08-Logic-Vs.-Intelligence})
+\end{description}

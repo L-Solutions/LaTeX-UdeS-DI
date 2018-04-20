@@ -1,0 +1,77 @@
+% -------------------------------------------------
+% PACKAGE SUPPLEMENTAIRE 
+% -------------------------------------------------
+
+% Les packages d\'ej\`a charg\'es sont les suivants :
+%--> \usepackage[utf8]{inputenc} ou \usepackage[latin1]{inputenc}
+%--> \usepackage[T1]{fontenc}
+%--> \usepackage{lmodern}
+%--> \usepackage{enumerate}
+%--> \usepackage{amsfonts, amsmath, amssymb, stmaryrd, latexsym}
+%--> \usepackage{xspace, setspace}
+%--> \usepackage{array}
+%--> \usepackage[dvipsnames,usenames]{color}
+%--> \usepackage[table]{xcolor}
+%--> \usepackage{wrapfig, epsfig}
+%--> \usepackage[english,frenchb]{babel}
+%--> \usepackage{frbib} % bibliography en francais
+%--> \usepackage{fancyhdr}
+%--> \usepackage{geometry}
+%--> \usepackage{ulem} % for sout and underline
+%--> \renewcommand{\emph}{\textit}
+%--> \usepackage{times,helvet,courier}
+%--> \usepackage{listings}
+
+% Vous pouvez ajouter des nouveaux packages ici
+% \
+
+% -------------------------------------------------
+% COMMANDE SUPPLEMENTAIRE
+% -------------------------------------------------
+
+%---- pour l'anglais ----
+\newcommand{\ie}{{i.e.}\xspace}
+\newcommand{\eg}{{e.g.}\xspace}
+\newcommand{\cf}{{\it cf.}\xspace}
+
+%---- pour le francais ----
+\newcommand{\cad}{{c'est-\`a-dire}\xspace}
+\newcommand{\Cad}{{C'est-\`a-dire}\xspace}
+\newcommand{\etc}{{\it etc.}\xspace}
+
+%---- Math ----
+\newcommand{\N}{\ensuremath{\mathbb{N}}\xspace}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}\xspace}
+
+% Nouvelles d\'efintion d'environnement de th\'eor\`eme et de d\'efinition.
+\newtheorem{frtheoreme}{Th\'eor\`eme}[section]
+\newtheorem{frlemme}[frtheoreme]{Lemme}
+\newtheorem{frprop}[frtheoreme]{Proposition}
+\newtheorem{frcoro}[frtheoreme]{Corollaire}
+\newtheorem{frdefinition}{D\'efinition}[section]
+
+% -------------------------------------------------
+% PAGE DE TITRE
+% -------------------------------------------------
+
+% ATTENTION : ne pas utiliser les macros \title \author ou \date !!!
+\auteur{Beno\^it Fraikin}
+\titre{Ma ma\^itrise ou ma th\`ese}
+
+% -------------------------------------------------
+
+% DESCRIPTION DU SOMMAIRE (EN FRANCAIS) -----------
+\MotsCles{mots-cles1; mots-cles2.}
+\sommaire{Ceci est le sommaire. Il est en fran\c{c}ais.}
+
+% REMERCIEMENTS -----------------------------------
+\remerciements{Ceci est la liste des remerciements. Ils sont en fran\c{c}ais.}
+
+% LISTE DES ABREVIATIONS --------------------------
+\abreviations{ 
+    \begin{description}
+    \item[SW] Star Wars
+    \item[ST] Star Trek
+    \item[BV] Babylon V
+    \end{description}
+}

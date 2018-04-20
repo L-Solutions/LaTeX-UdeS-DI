@@ -1,0 +1,132 @@
+%!TEX TS-program = pdflatex
+
+\documentclass[caractereUtf, % caract\`ere UTF8 activ\'e
+               these,        % mod\`ele pour une th\`ese de doctorat
+               hypertexte,   % support pour les liens 
+               simpleface    % impression sur simple face
+               ]{style/scienceUdeS}
+               
+%% Gabarit pour th\`ese
+%%
+%% Version 2018/03/26 v2.0
+%%
+%% Benoit Fraikin
+%% Faculte des Sciences
+%% Universite de Sherbrooke
+%% Sherbrooke (Quebec), Canada
+%% benoit.fraikin(at)usherbrooke.ca
+
+% =========================================== Options principales
+% - bibliothequeNationale : pr\'esente le document pour la copie de la 
+%   biblioth\`eque nationale. Attention, certaines commandes ne
+%   fonctionnent plus.
+%
+% - Natbib : d\'eclare le package Natbib pour \^etre utilis\'e dans le m\'emoire
+%
+% - caractereUtf : active les caract\`eres cod\'es en UTF8 au lieu du latin1
+% - caractereLatin : active les caract\`eres cod\'es en latin1 au lieu du UTF8
+%
+% - logopdflatex : utilise le logo de l'universit\'e en pdf, pour ceux 
+%   qui utilise pdflatex et non latex.
+%
+% - pasDeFigure : le document ne contient pas de figure (\begin{figure})
+% - pasDeTableau : le document ne contient pas de tableau (\begin{table})
+% - pasDeListing : le document ne contient pas de listing (\begin{lstlisting})
+%
+% - maitrise : pour une ma\^itrise en informatique
+% - maitriseGL : pour une ma\^itrise en g\'enie logiciel
+%                (ne diff\`ere pas de l'option "maitrise" pour l'instant)
+% - these : pour une these de doctorat
+%
+% - enRedaction : option pour signaler l'\'etat du document
+%                 \`a retirer pour la version finale
+% =========================================== Options secondaires
+% - hypertexte
+% - rectoverso
+% - simpleface
+% - draft
+% - final
+%=================================================================
+
+\begin{document}
+%====================== DEBUT DU DOCUMENT ========================
+\modeFrancais
+\include{contenu_these/debut}
+
+\include{contenu_these/jury}
+
+%=================================================================
+\enteteDeLaThese{}
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{\chaptername\ \thechapter.\ #1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\textsc{\thesection. #1}}}
+	
+%========================= INTRODUCTION ==========================
+
+\include{contenu_these/introduction}
+
+% Un article par chapitre
+%=========================== ARTICLE 1 ============================
+\modeFrancais
+%Entete du chapitre
+\include{contenu_these/chapitre-1}
+
+\cleardoublepage
+
+%Article
+\include{contenu_these/article-1} % fichier article-1.tex
+
+%=========================== ARTICLE 2 ============================
+\modeFrancais
+%Entete du chapitre
+\include{contenu_these/chapitre-2}
+
+\cleardoublepage
+
+%Article
+\include{contenu_these/article-2} % fichier article-2.tex
+
+%=========================== ARTICLE 3 ============================
+\modeFrancais
+%Entete du chapitre
+\include{contenu_these/chapitre-3}
+
+\cleardoublepage
+
+%Article
+\include{contenu_these/article-3} % fichier article-3.tex
+
+\cleardoublepage
+
+%=========================== CONCLUSION ============================
+
+\modeFrancais
+\include{contenu_these/conclusion}
+
+
+%%=================================================================
+%%========================== ANNEXES ==============================
+%%=================================================================
+\appendix
+\renewcommand{\chaptermark}[1]{\markboth{\textsc{\appendixname\ \thechapter.\ #1}}{}}
+%% Les annexes peuvent \^etre en fran\c{c}ais ou en anglais
+
+%%=========================== ANNEXE A ============================
+
+\include{contenu_these/annexe-A} % fichier annexe-A.tex
+
+%%=========================== ANNEXE B ============================
+
+\include{contenu_these/annexe-B} % fichier annexe-B.tex
+
+%=================================================================
+%=================== BIBLIOGRAPHIE ET INDEX ======================
+%=================================================================
+
+% --- Bibliographie
+\bibliographystyle{style/bibUdeSPlain}
+% le contenu est dans un fichier these.bib. 
+% Il est possible de mettre plusieurs noms de fichiers séparés par une virgule.
+\bibliography{bibliographie}  
+% --- Bibliographie
+
+\end{document}
