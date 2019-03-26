@@ -3,13 +3,10 @@
 %%
 %% Version 2019/03/25 v2.1
 %%
-%% Benoit Fraikin
-%% Facult\'e des Sciences
-%% Universite de Sherbrooke
-%% Sherbrooke (Quebec), Canada
-%% benoit.fraikin(at)usherbrooke.ca
+%% Benoît Fraikin
+%% benoit.fraikin(at)usherbrooke(dot)ca
 %% ---------------------
-%%
+%% 
 %% Copyright 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004
 %% The LaTeX3 Project and any individual authors listed elsewhere
 %% in this file.
@@ -25,7 +22,6 @@
 %% version 2003/12/01 or later.
 %% 
 %% This file has the LPPL maintenance status "maintained".
-%% 
 %% 
 %% The list of derived (unpacked) files belonging to the distribution
 %% and covered by LPPL is defined by the unpacking scripts (with
@@ -54,7 +50,7 @@
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{style/scienceUdeS}
-              [2018/03/26 v2.0 document pour these et memoire de l'UdeS Faculte des Sciences (par Benoit Fraikin)]
+              [2019/03/25 v2.1 document pour thèse et mémoire de l'UdeS Faculté des Sciences (par Benoît Fraikin (at) usherbrooke (dot) ca)]
 \newcommand\@ptsize{}
 \newif\if@restonecol
 \newif\if@titlepage

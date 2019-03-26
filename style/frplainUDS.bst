@@ -1,11 +1,8 @@
 
-%% Version 2018/03/26 v2.0
+%% Version 2019/03/25 v2.1
 %%
-%% Benoit Fraikin
-%% Facult\'e des Sciences
-%% Universite de Sherbrooke
-%% Sherbrooke (Quebec), Canada
-%% benoit.fraikin(at)usherbrooke.ca
+%% Benoît Fraikin
+%% benoit.fraikin(at)usherbrooke(dot)ca
 
 % BibTeX standard bibliography style `plain'
         % version 0.99a for BibTeX versions 0.99a or later, LaTeX version 2.09.
