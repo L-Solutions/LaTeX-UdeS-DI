@@ -1,7 +1,7 @@
 %%
 %% This is file `scienceUdeS.cls',
 %%
-%% Version 2018/03/26 v2.0
+%% Version 2019/03/25 v2.1
 %%
 %% Benoit Fraikin
 %% Facult\'e des Sciences
@@ -797,7 +797,7 @@
 \usepackage[dvipsnames,usenames]{color}
 \usepackage[table]{xcolor}
 \usepackage{wrapfig, epsfig}
-\usepackage[english,frenchb]{babel}
+\usepackage[english,french]{babel}
 \usepackage{frbibUdeS} % bibliography en francais
 \usepackage{fancyhdr}
 \usepackage{geometry}
@@ -1041,8 +1041,7 @@
 }
 
 \newcommand{\modeFrancais}{
-  \selectlanguage{frenchb}
-    % Red\'eclaration : frenchb donne FIG. et TAB.
+  \selectlanguage{french}
     \renewcommand\contentsname{Table des mati\`eres}
     \renewcommand\listfigurename{Liste des figures}
     \renewcommand\listtablename{Liste des tableaux}
